@@ -45,7 +45,7 @@ void process_image_callback(const sensor_msgs::Image img){
 	if (ball_located == false)
 		drive_robot(0.0,0.0);
 				
-} //&& (img.data[i+2] == 255) && (img.data[i+3] == 255) 
+}
 
 int main(int argc, char** argv){
 	
