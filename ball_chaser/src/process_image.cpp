@@ -31,19 +31,19 @@ void process_image_callback(const sensor_msgs::Image img){
 		{
 			regional_factor = i % img.step;
 			
-			if (regional_factor < section_factor)
-				drive_robot(0.3, -0.5);
-			else if (regional_factor > 2*section_factor)
+			if (regional_factor < section_factor) //drive left
 				drive_robot(0.3, 0.5);
-			else
-				drive_robot(0.3, 0.0);
+			else if (regional_factor > 2*section_factor)  //drive right
+				drive_robot(0.3, -0.5);
+			else 
+				drive_robot(0.3, 0.0);  //drive straight
 			ball_located = true;
 			break;
 		}
 	}
 		
 	if (ball_located == false)
-		drive_robot(0.0,0.0);
+		drive_robot(0.0,0.0);  //stop driving
 				
 }
 
