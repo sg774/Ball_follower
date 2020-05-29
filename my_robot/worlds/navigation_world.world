@@ -1,3 +1,4 @@
+<?xml version="1.0" ?>
 <sdf version='1.6'>
   <world name='default'>
     <plugin name='welcome_message' filename='libwelcome_message.so'/>
@@ -14840,7 +14841,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='my_robot'>
+      <!--<model name='my_robot'>
         <pose frame=''>-10.0006 3.00201 0.199997 8e-06 0.000331 -0.002398</pose>
         <scale>1 1 1</scale>
         <link name='left_wheel'>
@@ -14861,7 +14862,7 @@
           <acceleration>0.036018 -2.93768 -5.16054 -0.90137 -0.022257 -0.319929</acceleration>
           <wrench>0.543878 -44.359 -77.9242 0 -0 0</wrench>
         </link>
-      </model>
+      </model>-->
       <model name='robot'>
         <pose frame=''>0 -0.000492 0.400005 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -15047,7 +15048,7 @@
         <projection_type>perspective</projection_type>
       </camera>
     </gui>
-    <model name='my_robot'>
+    <!--<model name='my_robot'>
       <link name='robot_footprint'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <inertial>
@@ -15477,7 +15478,7 @@
         <robotNamespace>/</robotNamespace>
       </plugin>
       <pose frame=''>-10 3 0 0 -0 0</pose>
-    </model>
+    </model> -->
     <model name='w_ball'>
       <link name='link_0'>
         <inertial>
