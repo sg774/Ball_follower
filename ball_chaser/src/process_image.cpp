@@ -25,9 +25,9 @@ void process_image_callback(const sensor_msgs::Image img){
 	int regional_factor = 0;
 	bool ball_located = false;
 	
-	for (int i=0; i < data_size; i = i+2)
+	for (int i=0; i < data_size; i = i+3)
 	{
-		if ((img.data[i] == 255) && (img.data[i+1] == 255))
+		if ((img.data[i] == 255) && (img.data[i+1] == 255) && (img.data[i+2] == 255)) //check RGB value for each pixel
 		{
 			regional_factor = i % img.step;
 			
